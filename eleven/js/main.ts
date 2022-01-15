@@ -1,0 +1,1 @@
+const contents = await Deno.readFile()

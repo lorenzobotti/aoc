@@ -1,0 +1,12 @@
+buildPath := './build'
+packageName := 'eleven'
+mainClassName := 'Main'
+
+default:
+    just --list
+
+build:
+    javac -d {{buildPath}} *.java
+
+run: build
+    java -classpath {{buildPath}} {{packageName}}.{{mainClassName}}

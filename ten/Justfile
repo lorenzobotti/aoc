@@ -1,0 +1,12 @@
+cc := "gcc"
+flags := "-Wall"
+outfile := "target/main"
+
+default:
+    just --list
+
+build:
+    {{cc}} {{flags}} -o {{outfile}} *.c
+
+run: build
+    ./{{outfile}}

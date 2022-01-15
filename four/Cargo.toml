@@ -1,0 +1,7 @@
+[package]
+edition = "2021"
+name = "four"
+version = "0.1.0"
+
+[dependencies]
+smallvec = "1.7.0"
